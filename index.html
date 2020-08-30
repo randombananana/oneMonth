@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oprah Likes You. And so do other people.</title>
+
+    <style>
+
+        /* Basic CSS comment */
+        body {
+            background: #BBB;
+            color: black;
+            width: 960px;
+            margin: 0 auto;
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: #333;
+        }
+
+    </style>
+
+    <script>
+        /* alert("I'm annoying") */
+
+        var username = prompt("What is your name?");
+        var car = ["BMW", "Saab", "Maserati"];
+        randCar = car[Math.floor(Math.random() * car.length)];
+
+        if (username === "Jesse" || username === "Chris") {
+            document.write("<h1>Hello " + username + "! You won a " + randCar + "!</h1>");
+            if(randCar === "BMW") {
+                document.write("<img height='300' width='600' alt='BMW' src='https://www.bmw.nl/content/dam/bmw/common/all-models/2-series/gran-coupe/2019/Inspire-Highligt/bmw-2-series-gran-coupe-inspire-ag-sp-xxl.jpg/_jcr_content/renditions/cq5dam.resized.img.1680.large.time1569251103311.jpg'>")
+            }
+            else if(randCar === "Saab"){
+                document.write("<img height='300' width='600' alt='Saab' src='https://static.autoblog.nl/images/wp2019/saab-9-3-nevs-veiling.jpg'>")
+            }
+            else if(randCar === "Maserati"){
+                document.write("<img height='300' width='600' alt='Maserati' src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Maserati_GranTurismo.JPG/1200px-Maserati_GranTurismo.JPG'>")
+            }
+        }
+        else {
+            document.write("<h1>Hello " + username + "!</h1>");
+        };
+
+
+    </script>
+
+</head>
+
+<body>
+
+<img alt="Oprah" height="800"
+     src="https://dynaimage.cdn.cnn.com/cnn/w_768,h_1024,c_scale/https%3A%2F%2Fdynaimage.cdn.cnn.com%2Fcnn%2Fx_651%2Cy_0%2Cw_1579%2Ch_2106%2Cc_crop%2Fhttps%253A%252F%252Fstamp.static.cnn.io%252F5e30c1873f340b0022d0330a%252F190324210248-01-oprah-winfrey-2019.jpg"
+     width="600">
+
+</body>
+
+</html>
+

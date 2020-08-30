@@ -1,0 +1,1 @@
+// car[Math.floor((Math.random() * car.length))]
